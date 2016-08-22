@@ -1,7 +1,3 @@
-section .data
-    msg db      "Hello, World!", 10
-
-section .text
     call   greet
     mov    rax, 60
     mov    rdi, 0
@@ -14,3 +10,5 @@ greet:
     mov     rdx, 14
     syscall
     ret
+
+    msg db      "Hello, World!", 10
