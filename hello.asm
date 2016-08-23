@@ -3,6 +3,7 @@
     mov    rdi, 0
     syscall
 
+# A function call, just to show off our working stack.
 greet:
     mov     rax, 1
     mov     rdi, 1
