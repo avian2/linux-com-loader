@@ -9,6 +9,8 @@ loader jumps to instruction at 0x100.
 
 What would be the program segment prefix (0x0000 - 0x0100) is left unused.
 
+If you're confused, see [this blog post](https://www.tablix.org/~avian/blog/archives/2016/08/linux_loader_for_dos_like_com_files/) for some details.
+
 **You can't run DOS .COM executables with this. Code is executed as a
 normal Linux process using the current architecture. No attempt is made to
 simulate x86 real mode or DOS services.**
@@ -36,6 +38,9 @@ Now you can run .COM binaries directly!
     Hello, world!
 
 ## License
+
+Linux COM loader was written by Tomaz Solc on a Monday evening. It is a silly thing
+not meant for serious use.
 
                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                        Version 2, December 2004
